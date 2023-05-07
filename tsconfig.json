@@ -18,6 +18,9 @@
     "src/client.ts",
     "src/deploy-commands.ts"
   ],
-  "include": ["./**/*.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["./**/*.ts", "jest.config.js"],
+  "exclude": ["node_modules", "dist"],
+  "typeAcquisition": {
+    "include": ["jest"]
+  }
 }
